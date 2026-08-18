@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>comparação captura × referência</title>
+<style>
+  body{margin:0;background:#0b0d10;color:#aab;font:12px/1.4 system-ui,sans-serif}
+  .row{display:flex}
+  .row>figure{margin:0;width:50%}
+  figcaption{padding:4px 8px;background:#000;color:#dde;font-weight:600}
+  img{width:100%;display:block}
+</style>
+<div class="row">
+  <figure><figcaption id="ca"></figcaption><img id="ia"></figure>
+  <figure><figcaption id="cb"></figcaption><img id="ib"></figure>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  ia.src = q.get('a'); ib.src = q.get('b');
+  ca.textContent = q.get('la') || q.get('a');
+  cb.textContent = q.get('lb') || q.get('b');
+</script>

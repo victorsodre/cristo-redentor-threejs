@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>grade de imagens</title>
+<style>
+  body{margin:0;background:#0b0d10;color:#aab;font:12px/1.4 system-ui,sans-serif}
+  .g{display:grid;grid-template-columns:repeat(2,1fr);width:1920px}
+  figure{margin:0}
+  figcaption{padding:4px 8px;background:#000;color:#dde;font-weight:600}
+  img{width:100%;display:block}
+</style>
+<div class="g" id="g"></div>
+<script>
+  const q = new URLSearchParams(location.search);
+  g.innerHTML = q.getAll('i').map((v) => {
+    const [src, label] = v.split('|');
+    return `<figure><figcaption>${label || src}</figcaption><img src="${src}"></figure>`;
+  }).join('');
+</script>

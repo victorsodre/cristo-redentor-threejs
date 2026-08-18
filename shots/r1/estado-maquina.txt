@@ -1,0 +1,10 @@
+=== estado da máquina — rodada 1 — 18/08/2026 11:59 ===
+11:59  up  1:06, 2 users, load averages: 1,56 1,79 1,94
+top CPU:
+ %CPU COMM
+ 15,7 /Applications/iTerm.app/Contents/MacOS/iTerm2
+  7,5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+  2,1 claude
+  0,8 /usr/libexec/ContinuityCaptureAgent
+VM/indexação:
+/: 	Indexing enabled.  

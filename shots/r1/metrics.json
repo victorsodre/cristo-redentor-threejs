@@ -1,0 +1,229 @@
+{
+  "round": "r1",
+  "quando": "2026-08-18T15:09:37.057Z",
+  "views": [
+    {
+      "id": "A-frente",
+      "ref": "01-frente.jpg",
+      "hour": 12,
+      "az": 0,
+      "pol": 1.47,
+      "dist": 70,
+      "fig": 1,
+      "nota": "frontal, altura do peito"
+    },
+    {
+      "id": "B-lateral",
+      "ref": "02-lateral.jpg",
+      "hour": 12,
+      "az": 1.5708,
+      "pol": 1.47,
+      "dist": 70,
+      "fig": 1,
+      "nota": "90 graus lateral"
+    },
+    {
+      "id": "C-base",
+      "ref": "03-contra-plongee.jpg",
+      "hour": 17.5,
+      "az": 0.3,
+      "pol": 2.18,
+      "dist": 34,
+      "fig": 1,
+      "nota": "contra-plongee da base"
+    },
+    {
+      "id": "D-ambiente",
+      "ref": "04-sobre-nuvens.jpg",
+      "hour": 17.5,
+      "az": -0.32,
+      "pol": 1.32,
+      "dist": 175,
+      "fig": 1,
+      "nota": "tres quartos afastada, mar de nuvens e sol rasante"
+    },
+    {
+      "id": "E-noite",
+      "ref": "06-noite.jpg",
+      "hour": 21,
+      "az": 0.55,
+      "pol": 1.38,
+      "dist": 120,
+      "fig": 1,
+      "nota": "extra: noite, estatua iluminada por baixo"
+    }
+  ],
+  "shots": [
+    {
+      "id": "A-frente",
+      "file": "shots/r1/A-frente.png",
+      "metrics": {
+        "calls": 11,
+        "triangles": 93672,
+        "programs": 11,
+        "geometries": 11,
+        "textures": 3,
+        "transferred": 491615,
+        "timings": {
+          "firstFrame": 288.79999999981374,
+          "statueReady": 1136,
+          "firstFrameWithStatue": 1205.6000000000931,
+          "worldReady": 1098.6000000000931,
+          "sceneComplete": 1205.6000000000931
+        },
+        "firstFrameMs": 288.79999999981374,
+        "firstFrameWithStatueMs": 1205.6000000000931,
+        "sceneCompleteMs": 1205.6000000000931,
+        "renderer": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)"
+      },
+      "errors": []
+    },
+    {
+      "id": "B-lateral",
+      "file": "shots/r1/B-lateral.png",
+      "metrics": {
+        "calls": 11,
+        "triangles": 93672,
+        "programs": 11,
+        "geometries": 11,
+        "textures": 3,
+        "transferred": 491615,
+        "timings": {
+          "firstFrame": 307.89999999990687,
+          "statueReady": 1539.1999999997206,
+          "firstFrameWithStatue": 1609.2999999998137,
+          "worldReady": 1502.1000000000931,
+          "sceneComplete": 1609.2999999998137
+        },
+        "firstFrameMs": 307.89999999990687,
+        "firstFrameWithStatueMs": 1609.2999999998137,
+        "sceneCompleteMs": 1609.2999999998137,
+        "renderer": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)"
+      },
+      "errors": []
+    },
+    {
+      "id": "C-base",
+      "file": "shots/r1/C-base.png",
+      "metrics": {
+        "calls": 11,
+        "triangles": 93672,
+        "programs": 11,
+        "geometries": 11,
+        "textures": 3,
+        "transferred": 491615,
+        "timings": {
+          "firstFrame": 298.70000000018626,
+          "statueReady": 1265.8999999999069,
+          "firstFrameWithStatue": 1351.5,
+          "worldReady": 1227.7000000001863,
+          "sceneComplete": 1351.5
+        },
+        "firstFrameMs": 298.70000000018626,
+        "firstFrameWithStatueMs": 1351.5,
+        "sceneCompleteMs": 1351.5,
+        "renderer": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)"
+      },
+      "errors": []
+    },
+    {
+      "id": "D-ambiente",
+      "file": "shots/r1/D-ambiente.png",
+      "metrics": {
+        "calls": 11,
+        "triangles": 93672,
+        "programs": 11,
+        "geometries": 11,
+        "textures": 3,
+        "transferred": 491615,
+        "timings": {
+          "firstFrame": 297.79999999981374,
+          "statueReady": 1443.3999999999069,
+          "firstFrameWithStatue": 1483.6999999997206,
+          "worldReady": 1400.1000000000931,
+          "sceneComplete": 1483.6999999997206
+        },
+        "firstFrameMs": 297.79999999981374,
+        "firstFrameWithStatueMs": 1483.6999999997206,
+        "sceneCompleteMs": 1483.6999999997206,
+        "renderer": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)"
+      },
+      "errors": []
+    },
+    {
+      "id": "E-noite",
+      "file": "shots/r1/E-noite.png",
+      "metrics": {
+        "calls": 11,
+        "triangles": 93672,
+        "programs": 11,
+        "geometries": 11,
+        "textures": 3,
+        "transferred": 491615,
+        "timings": {
+          "firstFrame": 302.89999999990687,
+          "statueReady": 1299.7000000001863,
+          "firstFrameWithStatue": 1354.3999999999069,
+          "worldReady": 1262.3000000002794,
+          "sceneComplete": 1354.3999999999069
+        },
+        "firstFrameMs": 302.89999999990687,
+        "firstFrameWithStatueMs": 1354.3999999999069,
+        "sceneCompleteMs": 1354.3999999999069,
+        "renderer": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)"
+      },
+      "errors": []
+    }
+  ],
+  "nativa": {
+    "label": "nativa",
+    "condicao": {},
+    "wallMs": 14241,
+    "gl": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)",
+    "firstFrameMs": 317.90000000037253,
+    "firstFrameWithStatueMs": 1835.7999999998137,
+    "transferredBytes": 491918,
+    "cpuBenchMs": 10.5,
+    "frames": 1548,
+    "avgFps": 154.9813281539399,
+    "medianFrameMs": 3,
+    "p95FrameMs": 14.399999999999636,
+    "worstFrameMs": 19.699999999999818,
+    "calls": 11,
+    "triangles": 93672,
+    "errors": []
+  },
+  "estrangulada": {
+    "label": "cpu-4x",
+    "condicao": {
+      "cpu": 4
+    },
+    "wallMs": 14794,
+    "gl": "ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version)",
+    "firstFrameMs": 681.2999999998137,
+    "firstFrameWithStatueMs": 2258.0999999996275,
+    "transferredBytes": 491918,
+    "cpuBenchMs": 43.69999999925494,
+    "frames": 1534,
+    "avgFps": 153.4798095009398,
+    "medianFrameMs": 3,
+    "p95FrameMs": 14.899999999999636,
+    "worstFrameMs": 30,
+    "calls": 11,
+    "triangles": 93672,
+    "errors": []
+  },
+  "rede4g": {
+    "label": "4g-rapido",
+    "rede": {
+      "offline": false,
+      "downloadThroughput": 524288,
+      "uploadThroughput": 393216,
+      "latency": 20
+    },
+    "firstFrameMs": 842.7000000001863,
+    "firstFrameWithStatueMs": 1576.9000000003725,
+    "transferredBytes": 491918,
+    "errors": []
+  }
+}

@@ -1,0 +1,10 @@
+=== estado da máquina — rodada 2 — 18/08/2026 12:53 ===
+12:53  up  1:59, 2 users, load averages: 1,79 2,05 2,28
+top CPU:
+ %CPU COMM
+ 29,6 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd
+ 15,4 /Applications/iTerm.app/Contents/MacOS/iTerm2
+  7,2 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+  6,1 /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDecoderXPCService.xpc/Contents/MacOS/VTDecoderXPCService
+daemons de fundo (mediaanalysisd/StorageManagement/mds_stores): 29,6%
+/: 	Indexing enabled.  

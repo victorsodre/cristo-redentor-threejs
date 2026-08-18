@@ -1,0 +1,7 @@
+# sha256 das referências — confira com: shasum -a 256 -c MANIFEST.sha256
+4aac4855d048f01f6cfa633109062a237f80a27063e568b822c61f0520a76305  01-frente.jpg
+9fc70e128967db17c898f79ad8e8394a6e8b8a960afa8db8d1420912949c9310  02-lateral.jpg
+816ce7ae02b3af5970ab26a59cccf189f4ebdae5d76f66336aa102bbcd934dc9  03-contra-plongee.jpg
+4cf45abc82e083d98889c91f8a0d4bff76f884dd492ad4d60b1f930f1b33f9ee  04-sobre-nuvens.jpg
+1900c6db7ceca1db98f90b86ce91e219d4095308d85ea28827a9c13a1cd7cf9d  05-golden-hour.jpg
+1c51dde64142a510b7778bcae8d25bd20e81edef0befc5ec8004a1387ae15df2  06-noite.jpg

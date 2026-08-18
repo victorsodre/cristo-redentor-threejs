@@ -1,0 +1,65 @@
+{
+  "round": "r1",
+  "results": [
+    {
+      "nome": "câmera nunca desce do piso do mirante",
+      "ok": true,
+      "detalhe": "y = -5.75 m (piso -9.2, mínimo esperado -7.6)"
+    },
+    {
+      "nome": "câmera nunca entra no pedestal",
+      "ok": true,
+      "detalhe": "raio horizontal 11.5 m a y = -5.8 m (pedestal tem 8 m de raio)"
+    },
+    {
+      "nome": "distância mínima respeitada",
+      "ok": true,
+      "detalhe": "22.0 m do centro da estátua (mínimo 22)"
+    },
+    {
+      "nome": "parado antes de 4 s de ociosidade",
+      "ok": true,
+      "detalhe": "azimute variou -0.0019 rad em 2,5 s"
+    },
+    {
+      "nome": "liga sozinho depois de 4 s",
+      "ok": true,
+      "detalhe": "azimute variou -0.0580 rad entre 2,5 s e 5,7 s"
+    },
+    {
+      "nome": "desliga ao primeiro clique",
+      "ok": true,
+      "detalhe": "parado 1 s depois do clique: azimute variou -0.0006 rad em 1,2 s (auto-rotate anda ~0,050 rad no mesmo tempo)"
+    },
+    {
+      "nome": "botão desliga de vez",
+      "ok": true,
+      "detalhe": "com o botão desligado, azimute variou 0.0000 rad em 1,5 s"
+    },
+    {
+      "nome": "link copiado restaura a câmera",
+      "ok": true,
+      "detalhe": "az=1.234&pol=1.111&dist=143.5&hour=17.50&fig=0&rot=1 → diferença de 0.000 m na posição da câmera"
+    },
+    {
+      "nome": "link restaura hora e toggles",
+      "ok": true,
+      "detalhe": "hora 17.5 → 17.5; figuras false → false"
+    },
+    {
+      "nome": "nada de rAF com a aba oculta",
+      "ok": true,
+      "detalhe": "1 frames desenhados em 1,2 s de aba oculta"
+    },
+    {
+      "nome": "volta a desenhar ao reaparecer",
+      "ok": true,
+      "detalhe": "37 frames em 0,6 s depois de voltar"
+    },
+    {
+      "nome": "sem erro de página durante os testes",
+      "ok": true,
+      "detalhe": "nenhum"
+    }
+  ]
+}

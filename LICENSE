@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Victor Sodré
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+A licença MIT acima cobre o CÓDIGO deste repositório. Os assets têm licença
+própria:
+
+  · cristo-*.glb — "Christ the Redeemer (Cristo Redentor)" por Victor Sodré,
+    CC BY. Detalhes da conversão em CREDITO.md.
+
+  · ref/*.jpg — seis fotografias do Wikimedia Commons, CC BY-SA 3.0 / 4.0,
+    de Mucio Scorzelli, Brunomsb, Donatas Dabravolskas, Jovem Daniels e
+    Alan Lima Brandão. São régua de comparação do gauntlet e NÃO entram na
+    cena renderizada. Autores, links e licença individual em ref/CREDITOS.md.
+
+  · three.js — MIT, r185.1, vendorizado em public/vendor/three/ com a licença
+    original.

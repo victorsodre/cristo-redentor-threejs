@@ -1,0 +1,29 @@
+
+=== rodada r2 — servidor em http://127.0.0.1:5173 ===
+
+[1] capturas (sequenciais)
+  A-frente    ok — 11 draw calls, 93.672 tri
+  B-lateral   ok — 11 draw calls, 93.672 tri
+  C-base      ok — 11 draw calls, 93.672 tri
+  D-ambiente  ok — 11 draw calls, 93.672 tri
+  E-noite     ok — 11 draw calls, 93.672 tri
+  F-escala    ok — 11 draw calls, 93.672 tri
+  folhas de comparação geradas
+  marcos de hora gerados
+
+[2] desempenho — condição nativa (1920x1080, sem estrangulamento)
+  nativa: 144.3 fps média · frame mediano 3.10 ms · p95 14.50 ms · 11 calls · 0.47 MB
+     GL: ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version) · laço de calibração de CPU: 10 ms
+
+[3] desempenho — CPU estrangulada 4x
+  cpu-4x: 142.9 fps média · frame mediano 3.40 ms · p95 14.60 ms · 11 calls · 0.47 MB
+     GL: ANGLE (AMD, ANGLE Metal Renderer: AMD Radeon Pro Vega 56, Unspecified Version) · laço de calibração de CPU: 44 ms
+
+[4] carga em 4G rápido (4 Mbps, 20 ms RTT), cache frio — 3 medições
+  4g-rapido #1: 1º frame 917 ms · com a estátua 1256 ms · 0.472 MB
+  4g-rapido #2: 1º frame 920 ms · com a estátua 1225 ms · 0.472 MB
+  4g-rapido #3: 1º frame 918 ms · com a estátua 1374 ms · 0.472 MB
+  mediana de 3: 1º frame 918 ms · com a estátua 1256 ms
+
+relatório: shots/r2/metrics.json
+
