@@ -254,6 +254,9 @@ let rafId = 0;
 let probe = null;
 
 function tick(ts) {
+  // Guarda no próprio loop, e não só no evento: o frame que já estava agendado
+  // quando a aba sumiu morre aqui, sem desenhar e sem reagendar.
+  if (document.hidden) { running = false; return; }
   rafId = requestAnimationFrame(tick);
   timer.update(ts);
   const dt = Math.min(timer.getDelta(), 0.1);

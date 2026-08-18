@@ -63,8 +63,8 @@
     },
     {
       "nome": "nada de rAF com a aba oculta",
-      "ok": false,
-      "detalhe": "2 frames desenhados em 1,2 s de aba oculta"
+      "ok": true,
+      "detalhe": "0 frames desenhados em 1,2 s de aba oculta"
     },
     {
       "nome": "volta a desenhar ao reaparecer",
@@ -74,7 +74,7 @@
     {
       "nome": "um dedo orbita",
       "ok": true,
-      "detalhe": "azimute 0.400 → -0.170 rad"
+      "detalhe": "azimute 0.400 → -0.244 rad"
     },
     {
       "nome": "pinça aproxima",
