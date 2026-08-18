@@ -84,7 +84,7 @@
 
   /* ---------- crédito ---------- */
   .credit{
-    position:absolute;left:12px;bottom:14px;max-width:min(46vw,420px);
+    position:absolute;left:12px;bottom:14px;max-width:min(38vw,360px);
     background:var(--panel);border:1px solid var(--panel-line);border-radius:var(--r);
     backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     padding:7px 10px;font-size:11px;line-height:1.5;color:var(--ink-dim);
@@ -119,6 +119,14 @@
   }
   .hint.off{opacity:0}
   .hint b{color:var(--ink);font-weight:600}
+
+  /* Lado a lado só cabe em tela larga. Abaixo de 1340 px a barra central
+     alcançaria o crédito, então os dois se empilham. */
+  @media (max-width:1340px){
+    .bar{bottom:70px}
+    .credit{left:12px;right:12px;bottom:12px;max-width:none;text-align:center}
+    .toast{bottom:148px}
+  }
 
   /* No celular tudo se empilha: HUD compacto em cima, barra e crédito
      encostados embaixo, sem um cobrir o outro. */

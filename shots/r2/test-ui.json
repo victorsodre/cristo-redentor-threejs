@@ -39,17 +39,17 @@
     {
       "nome": "a hora anda ~1 h por segundo",
       "ok": true,
-      "detalhe": "3.02 h em 3,0 s (hora 5.30 → 8.32)"
+      "detalhe": "3.00 h em 3,0 s (hora 5.30 → 8.30)"
     },
     {
       "nome": "o giro continua no ciclo",
       "ok": true,
-      "detalhe": "azimute variou -0.122 rad, ciclo=true"
+      "detalhe": "azimute variou -0.121 rad, ciclo=true"
     },
     {
       "nome": "o botão para o ciclo e a hora congela",
       "ok": true,
-      "detalhe": "hora 8.35 → 8.35 em 1,2 s, ciclo=false"
+      "detalhe": "hora 8.33 → 8.33 em 1,2 s, ciclo=false"
     },
     {
       "nome": "link copiado restaura a câmera",
@@ -63,18 +63,18 @@
     },
     {
       "nome": "nada de rAF com a aba oculta",
-      "ok": true,
-      "detalhe": "1 frames desenhados em 1,2 s de aba oculta"
+      "ok": false,
+      "detalhe": "2 frames desenhados em 1,2 s de aba oculta"
     },
     {
       "nome": "volta a desenhar ao reaparecer",
       "ok": true,
-      "detalhe": "38 frames em 0,6 s depois de voltar"
+      "detalhe": "37 frames em 0,6 s depois de voltar"
     },
     {
       "nome": "um dedo orbita",
       "ok": true,
-      "detalhe": "azimute 0.400 → -0.186 rad"
+      "detalhe": "azimute 0.400 → -0.170 rad"
     },
     {
       "nome": "pinça aproxima",
