@@ -121,7 +121,13 @@ O único item abaixo do máximo é o 6 (escala aferida em `F-escala.png` em vez 
 
 ## Crédito
 
-> **“Christ the Redeemer (Cristo Redentor)”** por **Victor Sodré** — CC BY.
+> **“Christ the Redeemer (Cristo Redentor)”** por **Parlin Sitorus**, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+> Fonte: https://sketchfab.com/3d-models/christ-the-redeemer-cristo-redentor-157dbdb9d8654651a5e5c9af7b412398
+>
+> **Alterações:** malha simplificada de 186.966 para 54.136 triângulos,
+> soldagem de vértices, rotação Z-up→Y-up, escala para 30 m, material PBR
+> de esteatita e compressão Draco. A escultura digital é de Parlin Sitorus;
+> pedestal, mirante, terreno, nuvens, baía e céu foram construídos para esta cena.
 
 O crédito aparece na interface da peça, no canto inferior esquerdo, sempre
 visível. Detalhes da conversão do modelo em `CREDITO.md`.
