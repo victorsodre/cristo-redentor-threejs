@@ -89,10 +89,15 @@ async function shots(url) {
       document.getElementById('hint').classList.add('off');   // a dica some sozinha em 9 s
     }, v);
     await page.waitForTimeout(900);              // nuvens e sombra assentam
-    const file = path.join(OUT, `${v.id}.png`);
-    await page.screenshot({ path: file });
+    const abs = path.join(OUT, `${v.id}.png`);
+    await page.screenshot({ path: abs });
     const m = await page.evaluate(() => window.__CRISTO.metrics());
-    results.push({ id: v.id, file, metrics: m, errors });
+    results.push({
+      id: v.id,
+      file: `shots/${ROUND}/${v.id}.png`,
+      metrics: m,
+      errors,
+    });
     log(`  ${v.id.padEnd(11)} ok — ${m.calls} draw calls, ${m.triangles.toLocaleString('pt-BR')} tri` +
         (errors.length ? `  ERROS: ${errors.length}` : ''));
     if (errors.length) errors.slice(0, 4).forEach((e) => log('     ! ' + e.slice(0, 200)));

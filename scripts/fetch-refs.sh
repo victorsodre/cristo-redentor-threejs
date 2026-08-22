@@ -5,7 +5,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 mkdir -p ref
-UA="cristo-redentor-refs/1.0 ()"
+UA="cristo-redentor-threejs/1.0 (https://github.com/victorsodre/cristo-redentor-threejs)"
 B="https://upload.wikimedia.org/wikipedia/commons/thumb"
 
 REFS=(
