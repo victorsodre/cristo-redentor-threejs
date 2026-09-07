@@ -10,6 +10,7 @@ import { createLighting } from './lighting.js';
 import { createHud } from './hud.js';
 import { createPalette, samplePalette, formatHour } from './timeofday.js';
 import { readState, serialize, createWriter } from './state.js';
+import { initializeLocale, t } from './i18n.js';
 
 const TARGET = new THREE.Vector3(0, 13, 0);
 const EYE_MIN_Y = DECK_Y + 1.6;      // altura de olho de quem está no mirante
@@ -35,6 +36,7 @@ const ui = {
   loaderFill: document.getElementById('loader-fill'),
   loaderTxt: document.getElementById('loader-txt'),
 };
+initializeLocale();
 
 // O GLB sai na frente de tudo: a rede corre enquanto a CPU monta a cena.
 const statuePromise = loadStatue((e) => {
@@ -224,9 +226,12 @@ ui.ciclo.addEventListener('click', () => setCiclo(!cicloOn));
 ui.link.addEventListener('click', async () => {
   const url = location.origin + location.pathname + serialize(state);
   try { await navigator.clipboard.writeText(url); }
-  catch { window.prompt('Copie o link desta vista:', url); return; }
+  catch { window.prompt(t('copyPrompt'), url); return; }
   ui.toast.classList.add('on');
   setTimeout(() => ui.toast.classList.remove('on'), 1400);
+});
+window.addEventListener('cristo:localechange', () => {
+  if (!statue) ui.loaderTxt.textContent = t('loading');
 });
 
 function markInteraction() {
@@ -327,7 +332,7 @@ statuePromise.then(({ root }) => {
 }).catch((err) => {
   console.error(err);
   startWorld();
-  ui.loaderTxt.textContent = 'falhou ao carregar o modelo — veja o console';
+  ui.loaderTxt.textContent = t('loadFailed');
 });
 
 // ---------------------------------------------------------------- captura

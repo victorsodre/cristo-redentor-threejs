@@ -22,16 +22,17 @@ SOFTWARE.
 
 ---
 
-A licença MIT acima cobre o CÓDIGO deste repositório. Os assets têm licença
-própria:
+The MIT license above covers this repository's code. Assets have their own
+licenses:
 
-  · cristo-*.glb — "Christ the Redeemer (Cristo Redentor)" por Victor Sodré,
-    CC BY. Detalhes da conversão em CREDITO.md.
+  · cristo-*.glb — “Christ the Redeemer (Cristo Redentor)” by Parlin Sitorus,
+    CC BY 4.0. Conversion details are in CREDITO.md.
 
-  · ref/*.jpg — seis fotografias do Wikimedia Commons, CC BY-SA 3.0 / 4.0,
-    de Mucio Scorzelli, Brunomsb, Donatas Dabravolskas, Jovem Daniels e
-    Alan Lima Brandão. São régua de comparação do gauntlet e NÃO entram na
-    cena renderizada. Autores, links e licença individual em ref/CREDITOS.md.
+  · ref/*.jpg — six Wikimedia Commons photographs under CC BY-SA 3.0 / 4.0,
+    by Mucio Scorzelli, Brunomsb, Donatas Dabravolskas, Jovem Daniels, and
+    Alan Lima Brandão. They are gauntlet comparison material and are not part
+    of the rendered scene. Authors, links, and individual licenses are in
+    ref/CREDITOS.md.
 
-  · three.js — MIT, r185.1, vendorizado em public/vendor/three/ com a licença
-    original.
+  · three.js — MIT, r185.1, vendored in public/vendor/three/ with its original
+    license.

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cristo Redentor · Corcovado</title>
-<meta name="description" content="Cena interativa do Cristo Redentor no alto do Corcovado, em three.js, com ciclo de luz do dia.">
+<title>Christ the Redeemer · Corcovado</title>
+<meta name="description" content="Interactive Three.js scene of Christ the Redeemer atop Corcovado, with a full day-light cycle.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>⛰️</text></svg>">
 <style>
   :root{
@@ -155,19 +155,19 @@
 <canvas id="scene"></canvas>
 
 <div class="ui" id="ui">
-  <div class="hint" id="hint"><b>Arraste</b> para girar · <b>role</b> para aproximar</div>
+  <div class="hint" id="hint" data-i18n="hint" data-i18n-html="true"><b>Drag</b> to orbit · <b>scroll</b> to zoom</div>
 
   <div class="hud" id="hud">
-    <b>desempenho</b>
+    <b data-i18n="performance">performance</b>
     <div>fps <span id="m-fps">—</span></div>
     <div>draw calls <span id="m-calls">—</span></div>
-    <div>triângulos <span id="m-tris">—</span></div>
-    <div>transferido <span id="m-mb">—</span></div>
+    <div><span data-i18n="triangles">triangles</span> <span id="m-tris">—</span></div>
+    <div><span data-i18n="transferred">transferred</span> <span id="m-mb">—</span></div>
   </div>
 
   <div class="bar">
     <span class="clock" id="clock">12:00</span>
-    <input id="hour" type="range" min="0" max="24" step="0.1" value="12" aria-label="Hora do dia">
+    <input id="hour" type="range" min="0" max="24" step="0.1" value="12" aria-label="Time of day" data-i18n-aria="hour">
     <div class="presets">
       <button data-hour="6" type="button">06h</button>
       <button data-hour="12" type="button">12h</button>
@@ -175,26 +175,29 @@
       <button data-hour="21" type="button">21h</button>
     </div>
     <span class="sep"></span>
-    <button id="rot" type="button" aria-pressed="true" title="Rotação automática">↻ girar</button>
+    <button id="rot" type="button" aria-pressed="true" title="Auto-rotate" data-i18n-title="rotate" data-i18n="rotateLabel">↻ rotate</button>
     <button id="ciclo" type="button"
-            title="Ciclo de 24 h: a hora avança 1 h por segundo, com o giro ligado"
-            aria-pressed="false">☀ ciclo</button>
-    <button id="fig" type="button" aria-pressed="true" title="Figura humana de 1,75 m para escala">escala</button>
-    <button id="link" type="button" title="Copiar link desta vista">copiar link</button>
+            title="24-hour cycle: advances time by one hour per second and enables rotation" data-i18n-title="cycle"
+            aria-pressed="false" data-i18n="cycleLabel">☀ cycle</button>
+    <button id="fig" type="button" aria-pressed="true" title="1.75 m human figure for scale" data-i18n-title="scale" data-i18n="scaleLabel">scale</button>
+    <button id="link" type="button" title="Copy a link to this view" data-i18n-title="copy" data-i18n="copyLabel">copy link</button>
+    <span class="sep"></span>
+    <button type="button" class="locale" data-locale="en" aria-pressed="true">EN</button>
+    <button type="button" class="locale" data-locale="pt-BR" aria-pressed="false">PT</button>
   </div>
 
   <div class="credit">
-    <strong><a href="https://sketchfab.com/3d-models/christ-the-redeemer-cristo-redentor-157dbdb9d8654651a5e5c9af7b412398" target="_blank" rel="noopener">“Christ the Redeemer (Cristo Redentor)”</a></strong> por Parlin Sitorus, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> — simplificado e reconvertido para a web.<br>
-    <span class="mais">Pedestal, mirante, terreno, nuvens, baía e céu construídos para esta cena.</span>
+    <strong><a href="https://sketchfab.com/3d-models/christ-the-redeemer-cristo-redentor-157dbdb9d8654651a5e5c9af7b412398" target="_blank" rel="noopener">“Christ the Redeemer (Cristo Redentor)”</a></strong> <span data-i18n="by">by</span> Parlin Sitorus, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span data-i18n="converted">— simplified and converted for the web.</span><br>
+    <span class="mais" data-i18n="credit">Pedestal, overlook, terrain, clouds, bay, and sky were built for this scene.</span>
   </div>
 
-  <div class="toast" id="toast">link copiado</div>
+  <div class="toast" id="toast" data-i18n="copied">link copied</div>
 </div>
 
 <div class="loader" id="loader">
   <h1>Cristo Redentor</h1>
   <div class="track"><div class="fill" id="loader-fill"></div></div>
-  <div id="loader-txt">carregando o modelo…</div>
+  <div id="loader-txt" data-i18n="loading">loading model…</div>
 </div>
 
 <!-- O GLB sai na frente de tudo: este pedaço roda enquanto o HTML ainda está

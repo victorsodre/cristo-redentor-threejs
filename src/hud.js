@@ -28,7 +28,7 @@ export function createHud(renderer) {
     el.fps.textContent = fps.toFixed(0);
     el.fps.className = fps < 30 ? 'warn' : '';
     el.calls.textContent = renderer.info.render.calls;
-    el.tris.textContent = renderer.info.render.triangles.toLocaleString('pt-BR');
+    el.tris.textContent = renderer.info.render.triangles.toLocaleString(document.documentElement.lang);
     el.mb.textContent = (transferred() / 1048576).toFixed(2) + ' MB';
   }
 
