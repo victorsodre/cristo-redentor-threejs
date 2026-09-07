@@ -29,9 +29,12 @@ node scripts/test-ui.mjs --round=r3
 ```
 
 The scripts write deterministic viewpoints, comparison sheets, time-of-day
-frames, UI checks, and measurements to `shots/<round>/`. `GAUNTLET.md` records
-the historical scoring evidence. Each capture phase opens only one headless
-browser at a time so GPU measurements remain meaningful.
+frames, UI checks, and measurements to `shots/<round>/`. The historical scoring
+evidence is available in [English](GAUNTLET.en.md) and in its preserved
+[Portuguese original](GAUNTLET.md). The authoring brief is likewise available in
+[English](PROMPT-cristo-threejs.en.md) beside its preserved
+[Portuguese original](PROMPT-cristo-threejs.md). Each capture phase opens only
+one headless browser at a time so GPU measurements remain meaningful.
 
 ## Historical measurements
 
@@ -49,8 +52,8 @@ for other machines or browsers.
 | fewer than 30 draw calls | 11 |
 | day cycle enabled | 126.7 fps mean; 3.10 ms median; 16.30 ms p95 |
 
-The final recorded gauntlet score was 33/34 across two rounds. See
-`GAUNTLET.md` for methodology, screenshots, and limits.
+The final recorded gauntlet score was 33/34 across two rounds. See the English
+[gauntlet translation](GAUNTLET.en.md) for methodology, screenshots, and limits.
 
 ## Scene composition
 
